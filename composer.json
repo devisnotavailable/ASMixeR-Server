@@ -1,0 +1,53 @@
+{
+  "name": "justicedev/asmixer-server",
+  "description": "asmixer-server",
+  "type": "project",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Victor",
+      "email": "victor.faust.dev@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.1.0",
+    "yiisoft/yii2": "~2.0.14",
+    "yiisoft/yii2-bootstrap": "~2.0.0",
+    "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+    "dmstr/yii2-adminlte-asset": "2.*",
+    "geoip2/geoip2": "^2.3",
+    "bower-asset/fontawesome": "^4.6",
+    "bower-asset/bootstrap-datepicker": "^1.6",
+    "bower-asset/eonasdan-bootstrap-datetimepicker": "*",
+    "bower-asset/select2": "v4.0.4",
+    "bower-asset/moment": "*",
+    "bower-asset/chosen": "^1.8",
+    "ext-redis": "*",
+    "ramsey/uuid": "~2.8",
+    "ethercreative/yii2-ip-ratelimiter": "1.*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "yiisoft/yii2-codeception": "*",
+    "yiisoft/yii2-debug": "*",
+    "yiisoft/yii2-gii": "*",
+    "yiisoft/yii2-faker": "*"
+  },
+  "config": {
+    "process-timeout": 1800,
+    "fxp-asset": {
+      "enabled": false
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "composer/package-versions-deprecated": true
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
