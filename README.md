@@ -1,15 +1,11 @@
-#### asmixer server
----------
-
-###    
+# ASMixeR Server
 
 - mysql
 - nginx
 - php8.1
 - redis
 
-### API endpoints
----------
+## API endpoints
 
 | Url                           | Method | Params                                            | Example                                                                          |
 |-------------------------------|--------|---------------------------------------------------|----------------------------------------------------------------------------------|
@@ -23,8 +19,7 @@
 | /sample/get-file              | GET    | uuid **String**                                   | https://api.asmixer.ru/sample/get-file?uuid=07f64ad5-bcee-4eb3-b9a5-d19985809f11 |
 | /sample/get                   | GET    | categoryId **INT**                                | https://api.asmixer.ru/sample/get?categoryId=1                                   |
 
-### For Developer
----------
+## Building
 
 ### Install composer-asset-plugin
 
@@ -36,7 +31,7 @@ composer global require "fxp/composer-asset-plugin:^1.2.0"
 
 `CREATE DATABASE asmixer CHARACTER SET utf8 COLLATE utf8_general_ci;`
 
-### run commands
+### Run commands
 
 ```sh
  composer install
@@ -52,3 +47,9 @@ or
 ## Nginx Config
 
 ``look folder deploy/``
+
+## License
+
+[![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](https://www.gnu.org/licenses/gpl-3.0.en.html)  
+
+ASMixeR is Free Software: You can use, study, share, and improve it at will. Specifically you can redistribute and/or modify it under the terms of the [GNU General Public License](https://www.gnu.org/licenses/gpl.html) as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
